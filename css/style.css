@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.header {
+    background: black;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.headerTitle {
+    color: white;
+    text-transform: uppercase;
+    font-size: 400%;
+    font-weight: 400;
+}
+
+.headerButton {
+    text-transform: uppercase;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 150%;
+    letter-spacing: 2px;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: tomato;
+}
+
+#menuToggle {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transition: transform 0.4s ease, background 0.4s ease;
+}
+
+#menuToggle input:checked ~ span {
+    transform: rotate(45deg);
+    background: #232323;
+    position: absolute;
+    top: 0;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg);
+    background: #232323;
+    position: absolute;
+    top: 0;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 400px;
+    width: 100vw;
+    max-height: 100vh;
+    margin: 0;
+    padding: 50px;
+    padding-top: 125px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background: #ededed;
+    list-style-type: none;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menuToggle input:checked ~ #menu {
+    transform: translateX(0);
+}
+
+.headerButton:hover {
+    cursor: pointer;
+}
+
+.bigFigure {
+    width: 100%;
+    height: 110vh;
+}
+
+.bigFigure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collections {
+    width: 100%;
+    padding: 80px;
+    background: white;
+}
+
+.collectionsTitle, .infoTitle {
+    font-size: 350%;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.collectionsList {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.collectionsListItem {
+    width: 500px;
+    height: 700px;
+    background: black;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.collectionsListItem > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    background: white;
+    padding: 80px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.block {
+    width: 25%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    text-align: center;
+    background-color: gray;
+    border: solid black 2px;
+}
+
+.info p {
+    text-align: center;
+}
+
+.bottomnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+    background-color: #333; 
+    padding: 20px;
+}
+
+.bottomnav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 15px; 
+    transition: color 0.3s;
+}
+
+.bottomnav a:hover {
+    color: tomato;
+}
