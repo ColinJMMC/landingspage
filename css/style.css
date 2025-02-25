@@ -1,3 +1,7 @@
+html {
+    font-size: 62.5%;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,23 +10,23 @@
 
 body {
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem; 
 }
 
 .header {
     background: black;
     display: flex;
-    height: 80px;
+    height: 8rem;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    padding-left: 40px;
+    padding: 2rem;
+    padding-left: 4rem;
 }
 
 .headerTitle {
     color: white;
     text-transform: uppercase;
-    font-size: 400%;
+    font-size: 4rem;
     font-weight: 400;
 }
 
@@ -31,8 +35,8 @@ body {
     background: transparent;
     color: white;
     border: none;
-    font-size: 150%;
-    letter-spacing: 2px;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
 }
 
 #menuToggle a {
@@ -48,8 +52,8 @@ body {
 #menuToggle {
     display: block;
     position: fixed;
-    top: 30px;
-    right: 50px;
+    top: 3rem;
+    right: 5rem;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -57,11 +61,11 @@ body {
 
 #menuToggle input {
     display: block;
-    width: 40px;
-    height: 32px;
+    width: 4rem;
+    height: 3.2rem;
     position: absolute;
-    top: -7px;
-    left: -5px;
+    top: -0.7rem;
+    left: -0.5rem;
     cursor: pointer;
     opacity: 0;
     z-index: 2;
@@ -69,12 +73,12 @@ body {
 
 #menuToggle span {
     display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
+    width: 3.3rem;
+    height: 0.4rem;
+    margin-bottom: 0.5rem;
     position: relative;
     background: #cdcdcd;
-    border-radius: 3px;
+    border-radius: 0.3rem;
     z-index: 1;
     transition: transform 0.4s ease, background 0.4s ease;
 }
@@ -101,12 +105,12 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    max-width: 400px;
+    max-width: 40rem;
     width: 100vw;
     max-height: 100vh;
     margin: 0;
-    padding: 50px;
-    padding-top: 125px;
+    padding: 5rem;
+    padding-top: 12.5rem;
     box-sizing: border-box;
     overflow-y: auto;
     background: #ededed;
@@ -136,12 +140,12 @@ body {
 
 .collections {
     width: 100%;
-    padding: 80px;
+    padding: 8rem;
     background: white;
 }
 
 .collectionsTitle, .infoTitle {
-    font-size: 350%;
+    font-size: 3.5rem;
     color: black;
     text-transform: uppercase;
     font-weight: 400;
@@ -150,15 +154,15 @@ body {
 .collectionsList {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 4rem;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 .collectionsListItem {
-    width: 500px;
-    height: 700px;
+    width: 50rem;
+    height: 70rem;
     background: black;
     flex-shrink: 1;
     flex-grow: 1;
@@ -172,9 +176,9 @@ body {
 
 .info {
     background: white;
-    padding: 80px;
+    padding: 8rem;
     display: flex;
-    gap: 40px;
+    gap: 4rem;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -185,7 +189,7 @@ body {
     flex-grow: 1;
     text-align: center;
     background-color: gray;
-    border: solid black 2px;
+    border: solid black 0.2rem;
 }
 
 .info p {
@@ -196,17 +200,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px; 
+    gap: 3rem; 
     background-color: #333; 
-    padding: 20px;
+    padding: 2rem;
 }
 
 .bottomnav a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.8rem;
     text-align: center;
-    padding: 10px 15px; 
+    padding: 1rem 1.5rem; 
     transition: color 0.3s;
 }
 
